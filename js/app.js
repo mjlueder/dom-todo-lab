@@ -9,6 +9,7 @@ const ulEl = document.getElementById("todo-list")
 
 btnEl.addEventListener('click', function(evt){
   // console.log(evt);
+  if (inputEl.value === '') return
   const li = document.createElement('li')
   // console.log(li);
   li.textContent = inputEl.value 
