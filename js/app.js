@@ -20,9 +20,19 @@ btnEl.addEventListener('click', function(evt){
   inputEl.value = ''
 })
 
-resetEl.addEventListener('click', function(evt){
-  const listItems = document.querySelectorAll('li')
-  console.log(listItems);
-  listItems.remove(listItems)
-  // ulEl.removeChild(listItems)
-})
+// resetEl.addEventListener('click', function(evt){
+//   const li = document.querySelector('li')
+//   console.log(li);
+//   // const listItems = document.querySelectorAll('li')
+//   // listItems.remove(listItems)
+//   ulEL.removeChild(li)
+// })
+
+
+// For delete list item on click:
+// add event listener to ulEL for click
+// if a list item is clicke, ulEL should catch that
+
+// ulEL.addEventListener('click', function(evt){
+//   console.log(evt);
+// })
