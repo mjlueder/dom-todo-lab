@@ -33,6 +33,7 @@ btnEl.addEventListener('click', function(evt){
 // add event listener to ulEL for click
 // if a list item is clicke, ulEL should catch that
 
-// ulEL.addEventListener('click', function(evt){
-//   console.log(evt);
-// })
+ulEl.addEventListener('click', function(evt){
+  console.log(evt.target);
+  evt.target.remove()
+})
