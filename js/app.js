@@ -9,7 +9,7 @@ const resetEl = document.getElementById("reset-button")
 // console.log(ulEl);
 // console.log(resetEl);
 
-btnEl.addEventListener('click', function(evt){
+btnEl.addEventListener('click', function(){
   // console.log(evt);
   if (inputEl.value === '') return
   const li = document.createElement('li')
@@ -20,13 +20,13 @@ btnEl.addEventListener('click', function(evt){
   inputEl.value = ''
 })
 
-// resetEl.addEventListener('click', function(evt){
-//   const li = document.querySelector('li')
-//   console.log(li);
-//   // const listItems = document.querySelectorAll('li')
-//   // listItems.remove(listItems)
-//   ulEL.removeChild(li)
-// })
+resetEl.addEventListener('click', function(evt){
+  // const li = document.querySelector('li')
+  // console.log(li);
+  // const listItems = document.querySelectorAll('li')
+  // listItems.remove(listItems)
+  ulEl.innerHTML = ''
+})
 
 
 // For delete list item on click:
